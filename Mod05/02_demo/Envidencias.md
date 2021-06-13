@@ -22,17 +22,29 @@ In this Demo, you will learn how to create a virtual machine by using PowerShell
    # create a resource group
    New-AzResourceGroup -Name $myResourceGroup -Location $myLocation
    
+   New-AzVm `
+   -ResourceGroupName $myResourceGroup `
+   -Name $myVM `
+   -Location $myLocation `
+   -Credential (Get-Credential)
+   
    # Create the virtual machine. When prompted, provide a username
    # and password to be used as the logon credentials for the VM.
    
-   New-AzVm `
+   # Deprecated: New-AzVm `
        -ResourceGroupName $myResourceGroup `
        -Name $myVM `
        -Location $myLocation `
        -adminUsername $vmAdmin `
        -adminPassword $vmPassword
+    #actualizado   
+     New-AzVm `
+   -ResourceGroupName $myResourceGroup `
+   -Name $myVM `
+   -Location $myLocation `
+   -Credential (Get-Credential) 
    ```
-
+   
    It will take a few minutes for the VM to be created.
 
 #### Verify the machine creation in the portal
