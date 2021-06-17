@@ -1,44 +1,11 @@
----
-lab:
-    az204Title: 'Lab 10: Asynchronously processing messages by using Azure Queue Storage'
-    az020Title: 'Lab 10: Asynchronously processing messages by using Azure Queue Storage'
-    az204Module: 'Module 10: Develop message-based solutions'
-    az020Module: 'Module 10: Develop message-based solutions'
-    type: 'Answer Key'
----
-
 # Lab 10: Asynchronously processing messages by using Azure Queue Storage
-# Student lab answer key
-
 ## Microsoft Azure user interface
 
 Given the dynamic nature of Microsoft cloud tools, you might experience Azure UI changes after the development of this training content. These changes might cause the lab instructions and lab steps to not match up.
 
 Microsoft updates this training course when the community brings needed changes to our attention; however, because cloud updates occur frequently, you might encounter UI changes before this training content updates. **If this occurs, adapt to the changes, and then work through them in the labs as needed.**
 
-## Instructions
-
-### Before you start
-
-#### Sign in to the lab virtual machine
-
-Sign in to your Windows 10 virtual machine (VM) by using the following credentials:
-    
--   Username: **Admin**
-
--   Password: **Pa55w.rd**
-
-> **Note**: Instructions to connect to the virtual lab environment will be provided by your instructor.
-
-#### Review the installed applications
-
-Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for the applications that you'll use in this lab:
-    
--   Microsoft Edge
-
--   Visual Studio Code
-
--   Azure Storage Explorer
+![Architecture-11](ZZ-lab/Architecture-11.png)
 
 ### Exercise 1: Create Azure resources
 
@@ -104,6 +71,8 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 In this exercise, you created a new Azure Storage account that you'll use through the remainder of the lab.
 
+![M10-Exer1-T2a](ZZ-lab/M10-Exer1-T2a.PNG)
+
 ### Exercise 2: Configure the Azure Storage SDK in a .NET project 
 
 #### Task 1: Create a .NET project
@@ -140,6 +109,8 @@ In this exercise, you created a new Azure Storage account that you'll use throug
 
 1.  Select **Kill Terminal** or the **Recycle Bin** icon to close the currently open terminal and any associated processes.
 
+![M10-Exer2-T1a](ZZ-lab/M10-Exer2-T1a.PNG)
+
 #### Task 2: Write code to access Azure Storage
 
 1.  In the Explorer pane of the **Visual Studio Code** window, open the **Program.cs** file.
@@ -168,7 +139,7 @@ In this exercise, you created a new Azure Storage account that you'll use throug
     public class Program
     {
     }
-    ``` 
+    ```
 
 1.  In the **Program** class, enter the following line of code to create a new string constant named **storageConnectionString**:
 
@@ -201,17 +172,19 @@ In this exercise, you created a new Azure Storage account that you'll use throug
     using System;
     using System.Text;
     using System.Threading.Tasks;
-
+    
     public class Program
     {
         private const string storageConnectionString = "<storage-connection-string>";
         private const string queueName = "messagequeue";
-
+    
         public static async Task Main(string[] args)
         {
         }
     }
     ```
+
+![M10-Exer2-T2a](ZZ-lab/M10-Exer2-T2a.PNG)
 
 #### Task 3: Validate Azure Storage access
 
@@ -271,6 +244,8 @@ In this exercise, you created a new Azure Storage account that you'll use throug
 #### Review
 
 In this exercise, you configured your .NET project to access the Storage service and manipulate a queue made available through the service.
+
+![M10-Exer2-T3a](ZZ-lab/M10-Exer2-T3a.PNG)
 
 ### Exercise 3: Read messages from the queue
 
@@ -366,6 +341,8 @@ In this exercise, you configured your .NET project to access the Storage service
 
 1.  Select **Kill Terminal** or the **Recycle Bin** icon to close the currently open terminal and any associated processes.
 
+![M10-Exer3-T1a](ZZ-lab/M10-Exer3-T1a.PNG)
+
 #### Task 2: Test message queue access
 
 1.  In the **Visual Studio Code** window, right-click or activate the shortcut menu for the Explorer pane, and then select **Open in Terminal**.
@@ -444,6 +421,10 @@ In this exercise, you configured your .NET project to access the Storage service
 
 1.  Select **Kill Terminal** or the **Recycle Bin** icon to close the currently open terminal and any associated processes.
 
+![M10-Exer3-T2a](ZZ-lab/M10-Exer3-T2a.PNG)
+
+![M10-Exer3-T2b](ZZ-lab/M10-Exer3-T2b.PNG)
+
 #### Task 3: Delete queued messages
 
 1.  In the Explorer pane of the **Visual Studio Code** window, open the **Program.cs** file.
@@ -507,6 +488,10 @@ In this exercise, you configured your .NET project to access the Storage service
 #### Review
 
 In this exercise, you read and deleted existing messages from the Storage queue by using the .NET library.
+
+![M10-Exer3-T3a](ZZ-lab/M10-Exer3-T3a.PNG)
+
+![M10-Exer3-T3b](ZZ-lab/M10-Exer3-T3b.PNG)
 
 ### Exercise 4: Queue new messages by using .NET
 
@@ -573,6 +558,8 @@ In this exercise, you read and deleted existing messages from the Storage queue 
 
 1.  Select **Kill Terminal** or the **Recycle Bin** icon to close the currently open terminal and any associated processes.
 
+![M10-Exer4-T1a](ZZ-lab/M10-Exer4-T1a.PNG)
+
 #### Task 2: View queued messages by using Storage Explorer
 
 1.  Return to Storage Explorer, and then find and expand the **asyncstor*[yourname]*** storage account that you created earlier in this lab.
@@ -588,6 +575,8 @@ In this exercise, you read and deleted existing messages from the Storage queue 
 #### Review
 
 In this exercise, you created new messages in the queue by using the .NET library for Storage queues.
+
+![M10-Exer4-T2a](ZZ-lab/M10-Exer4-T2a.PNG)
 
 ### Exercise 5: Clean up your subscription 
 
@@ -612,6 +601,8 @@ In this exercise, you created new messages in the queue by using the .NET librar
     ```
     
 1.  Close the Cloud Shell pane in the portal.
+
+![M10-Exer5-T2a](ZZ-lab/M10-Exer5-T2a.PNG)
 
 #### Task 3: Close the active application
 

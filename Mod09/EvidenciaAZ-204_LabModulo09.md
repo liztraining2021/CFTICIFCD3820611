@@ -1,42 +1,11 @@
----
-lab:
-    az204Title: 'Lab 09: Publishing and subscribing to Event Grid events'
-    az020Title: 'Lab 09: Publishing and subscribing to Event Grid events'
-    az204Module: 'Module 09: Develop event-based solutions'
-    az020Module: 'Module 09: Develop event-based solutions'
-    type: 'Answer Key'
----
-    
 # Lab 09: Publishing and subscribing to Event Grid events
-# Student lab answer key
-
 ## Microsoft Azure user interface
 
 Given the dynamic nature of Microsoft cloud tools, you might experience Azure UI changes after the development of this training content. These changes might cause the lab instructions and lab steps to not match up.
 
 Microsoft updates this training course when the community brings needed changes to our attention; however, because cloud updates occur frequently, you might encounter UI changes before this training content updates. **If this occurs, adapt to the changes, and then work through them in the labs as needed.**
 
-## Instructions
-
-### Before you start
-
-#### Sign in to the lab virtual machine
-
-Sign in to your Windows 10 virtual machine (VM) using the following credentials:
-
-- Username: **Admin**
-
-- Password: **Pa55w.rd**
-
-> **Note**: Instructions to connect to the virtual lab environment will be provided by your instructor.
-
-#### Review the installed applications
-
-Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for the applications that you'll use in this lab:
-
-- Microsoft Edge
-
-- Microsoft Visual Studio Code
+![Architecture-09](ZZ-lab/Architecture-09.png)
 
 ### Exercise 1: Create Azure resources
 
@@ -361,7 +330,7 @@ In this exercise, you created a new subscription, validated its registration, an
     using System.Threading.Tasks;
     using Azure;
     using Azure.Messaging.EventGrid;
-
+    
     public class Program
     {
         private const string topicEndpoint = "<topic-endpoint>";
