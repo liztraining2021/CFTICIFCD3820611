@@ -1,11 +1,48 @@
+<<<<<<< HEAD
 # Lab 08: Creating a multi-tier solution by using services in Azure
+=======
+---
+lab:
+    az204Title: 'Lab 08: Creating a multi-tier solution by using services in Azure'
+    az020Title: 'Lab 08: Creating a multi-tier solution by using services in Azure'
+    az204Module: 'Module 08: Implement API Management'
+    az020Module: 'Module 08: Implement API Management'
+    type: 'Answer Key'
+---
+
+# Lab 08: Creating a multi-tier solution by using services in Azure
+# Student lab answer key
+
+>>>>>>> 73666a636c1394bc784f9f569c5d68084cdcdff8
 ## Microsoft Azure user interface
 
 Given the dynamic nature of Microsoft cloud tools, you might experience Azure UI changes after the development of this training content. These changes might cause the lab instructions and steps to not match up.
 
 Microsoft updates this training course when the community brings needed changes to our attention. However, because cloud updates occur frequently, you might encounter UI changes before this training content updates. **If this occurs, adapt to the changes, and then work through them in the labs as needed.**
 
+<<<<<<< HEAD
 ![Architecture_08](ZZ-lab/Architecture_08.png)
+=======
+## Instructions
+
+### Before you start
+
+#### Sign in to the lab virtual machine
+
+Sign in to your Windows 10 virtual machine (VM) by using the following credentials:
+    
+-   Username: **Admin**
+
+-   Password: **Pa55w.rd**
+
+> **Note**: Instructions to connect to the virtual lab environment will be provided by your instructor.
+
+#### Review the installed applications
+
+Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for the applications that you'll use in this lab:
+    
+-   Microsoft Edge
+>>>>>>> 73666a636c1394bc784f9f569c5d68084cdcdff8
 
 ### Exercise 1: Creating an Azure App Service resource by using a Docker container image
 
@@ -75,8 +112,11 @@ Microsoft updates this training course when the community brings needed changes 
 
     > **Note**: Wait for the creation task to complete before you move forward with this lab.
 
+<<<<<<< HEAD
 ![M8-Exer1-T2a](ZZ-lab/M8-Exer1-T2a.PNG)
 
+=======
+>>>>>>> 73666a636c1394bc784f9f569c5d68084cdcdff8
 #### Task 3: Test the httpbin web application
 
 1.  In the Azure portal's navigation pane, select **Resource groups**.
@@ -113,6 +153,7 @@ Microsoft updates this training course when the community brings needed changes 
 
 In this exercise, you created a new Azure web app by using a container image sourced from Docker Hub.
 
+<<<<<<< HEAD
 ![M8-Exer1-T3a](ZZ-lab/M8-Exer1-T3a.PNG)
 
 ![M8-Exer1-T3b](ZZ-lab/M8-Exer1-T3b.PNG)
@@ -121,6 +162,8 @@ In this exercise, you created a new Azure web app by using a container image sou
 
 ![M8-Exer1-T3d](ZZ-lab/M8-Exer1-T3d.PNG)
 
+=======
+>>>>>>> 73666a636c1394bc784f9f569c5d68084cdcdff8
 ### Exercise 2: Build an API proxy tier by using Azure API Management
 
 #### Task 1: Create an API Management resource
@@ -157,10 +200,13 @@ In this exercise, you created a new Azure web app by using a container image sou
 
     > **Note**: Wait for the creation task to complete before you move forward with this lab.
 
+<<<<<<< HEAD
 ![M8-Exer2-T1a](ZZ-lab/M8-Exer2-T1a.PNG)
 
 ![M8-Exer2-T1b](ZZ-lab/M8-Exer2-T1b.PNG)
 
+=======
+>>>>>>> 73666a636c1394bc784f9f569c5d68084cdcdff8
 #### Task 2: Define a new API
 
 1.  In the Azure portal's navigation pane, select **Resource groups**.
@@ -243,6 +289,7 @@ In this exercise, you created a new Azure web app by using a container image sou
 
     > **Note**: Observe how there's many headers sent as part of your request that are echoed in the response. Specifically, you'll notice the new **Source** header that you created as part of this task.
 
+<<<<<<< HEAD
 1. Select the **Design** tab to return to the list of operations.
 
    **URL de la WEB APP**
@@ -254,6 +301,9 @@ In this exercise, you created a new Azure web app by using a container image sou
 ![M8-Exer2-T2b](ZZ-lab/M8-Exer2-T2b.PNG)
 
 
+=======
+1.	Select the **Design** tab to return to the list of operations.
+>>>>>>> 73666a636c1394bc784f9f569c5d68084cdcdff8
 
 #### Task 3: Manipulate an API response
 
@@ -326,6 +376,7 @@ In this exercise, you created a new Azure web app by using a container image sou
 
 In this exercise, you built a proxy tier between your App Service resource and any developers who wish to make queries.
 
+<<<<<<< HEAD
 ![M8-Exer2-T3a](ZZ-lab/M8-Exer2-T3a.PNG)
 
 ![M8-Exer2-T3b](ZZ-lab/M8-Exer2-T3b.PNG)
@@ -334,6 +385,8 @@ In this exercise, you built a proxy tier between your App Service resource and a
 
 ![M8-Exer2-T3d](ZZ-lab/M8-Exer2-T3d.PNG)
 
+=======
+>>>>>>> 73666a636c1394bc784f9f569c5d68084cdcdff8
 ### Exercise 3: Clean up your subscription 
 
 #### Task 1: Open Azure Cloud Shell
@@ -358,10 +411,13 @@ In this exercise, you built a proxy tier between your App Service resource and a
     
 1.  Close the Cloud Shell pane in the portal.
 
+<<<<<<< HEAD
 ![M8-Exer3-T2a](ZZ-lab/M8-Exer3-T2a.PNG)
 
 ![M8-Exer3-T2b](ZZ-lab/M8-Exer3-T2b.PNG)
 
+=======
+>>>>>>> 73666a636c1394bc784f9f569c5d68084cdcdff8
 #### Task 3: Close the active applications
 
 -   Close the currently running Microsoft Edge application.

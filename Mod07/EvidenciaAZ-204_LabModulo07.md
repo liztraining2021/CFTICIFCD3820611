@@ -8,13 +8,42 @@ lab:
 ---
 
 # Lab 07: Access resource secrets more securely across services
+<<<<<<< HEAD
+=======
+# Student lab answer key
+
+>>>>>>> 73666a636c1394bc784f9f569c5d68084cdcdff8
 ## Microsoft Azure user interface
 
 Given the dynamic nature of Microsoft cloud tools, you might experience Azure user interface (UI) changes after the development of this training content. These changes might cause the lab instructions and lab steps to not match.
 
 Microsoft updates this training course when the community brings needed changes to our attention; however, because cloud updates occur frequently, you might encounter UI changes before this training content updates. **If this occurs, adapt to the changes, and then work through them in the labs as needed.**
 
+<<<<<<< HEAD
 ![Architecture_07](ZZ-lab/Architecture_07.png)
+=======
+## Instructions
+
+### Before you start
+
+#### Sign in to the lab virtual machine
+
+Sign in to your Windows 10 virtual machine (VM) by using the following credentials:
+
+- Username: **Admin**
+- Password: **Pa55w.rd**
+
+> **Note**: Instructions to connect to the virtual lab environment will be provided by your instructor.
+
+#### Review the installed applications
+
+Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for the applications that you'll use in this lab:
+
+- Microsoft Edge
+- File Explorer
+- Windows Terminal
+- Visual Studio Code
+>>>>>>> 73666a636c1394bc784f9f569c5d68084cdcdff8
 
 ### Exercise 1: Create Azure resources
 
@@ -24,7 +53,10 @@ Microsoft updates this training course when the community brings needed changes 
 1. In the open browser window, go to the **Azure portal** (<https://portal.azure.com>).
 1. Enter the email address for your Microsoft account, and then select **Next**.
 1. Enter the **password** for your Microsoft account, and then select **Sign in**.
+<<<<<<< HEAD
    
+=======
+>>>>>>> 73666a636c1394bc784f9f569c5d68084cdcdff8
     > **Note**: If this is your first time signing in to the Azure portal, you will be offered a tour of the portal. If you prefer to skip the tour, select **Get Started** to begin using the portal.
 
 #### Task 2: Create an Azure Storage account
@@ -34,7 +66,10 @@ Microsoft updates this training course when the community brings needed changes 
 1. From the **Storage accounts** blade, find your list of Storage instances.
 1. From the **Storage accounts** blade, select **New**.
 1. Find the tabs from the **Create storage account** blade, such as **Basics**.
+<<<<<<< HEAD
    
+=======
+>>>>>>> 73666a636c1394bc784f9f569c5d68084cdcdff8
     > **Note**: Each tab represents a step in the workflow to create a new storage account. You can select **Review + Create** at any time to skip the remaining tabs.
 1. From the **Basics** tab, perform the following actions:
     1. Leave the **Subscription** text box set to its default value.
@@ -47,13 +82,17 @@ Microsoft updates this training course when the community brings needed changes 
     1. Select **Review + Create**.
 1. From the **Review + Create** tab, review the options that you selected during the previous steps.
 1. Select **Create** to create the storage account by using your specified configuration.
+<<<<<<< HEAD
    
+=======
+>>>>>>> 73666a636c1394bc784f9f569c5d68084cdcdff8
     > **Note**: Wait for the creation task to complete before you move forward with this lab.
 1. In the Azure portal's navigation pane, select **All services**.
 1. From the **All services** blade, select **Storage Accounts**.
 1. From the **Storage accounts** blade, select the **securestor[yourname]** storage account that you created earlier in this lab.
 1. From the **Storage account** blade, find the **Settings** section, and then select the **Access keys** link.
 1. From the **Access keys** blade, select any one of the keys and record the value in either of the **Connection string** boxes. You'll use this value later in this lab.
+<<<<<<< HEAD
    
     > **Note**: It doesn't matter which connection string you choose. They are interchangeable.
 
@@ -61,6 +100,10 @@ Microsoft updates this training course when the community brings needed changes 
 
 ![M7-Exer1-T2b](ZZ-lab/M7-Exer1-T2b.PNG)
 
+=======
+    > **Note**: It doesn't matter which connection string you choose. They are interchangeable.
+
+>>>>>>> 73666a636c1394bc784f9f569c5d68084cdcdff8
 #### Task 3: Create an Azure Key Vault
 
 1. In the Azure portal's navigation pane, select the **Create a resource** link.
@@ -69,7 +112,10 @@ Microsoft updates this training course when the community brings needed changes 
 1. From the **Marketplace** search results blade, select the **Key Vault** result.
 1. From the **Key Vault** blade, select **Create**.
 1. Find the tabs from the **Create key vault** blade, such as **Basics**.
+<<<<<<< HEAD
    
+=======
+>>>>>>> 73666a636c1394bc784f9f569c5d68084cdcdff8
     > **Note**: Each tab represents a step in the workflow to create a new key vault. You can select **Review + Create** at any time to skip the remaining tabs.
 1. From the **Basics** tab, perform the following actions:
     1. Leave the **Subscription** text box set to its default value.
@@ -80,11 +126,16 @@ Microsoft updates this training course when the community brings needed changes 
     1. Select **Review + Create**.
 1. From the **Review + Create** tab, review the options that you selected during the previous steps.
 1. Select **Create** to create the key vault by using your specified configuration.
+<<<<<<< HEAD
    
     > **Note**: Wait for the creation task to complete before you move forward with this lab.
 
 ![M7-Exer1-T3a](ZZ-lab/M7-Exer1-T3a.PNG)
 
+=======
+    > **Note**: Wait for the creation task to complete before you move forward with this lab.
+
+>>>>>>> 73666a636c1394bc784f9f569c5d68084cdcdff8
 #### Task 4: Create an Azure Functions app
 
 1. In the Azure portal's navigation pane, select the **Create a resource** link.
@@ -93,7 +144,10 @@ Microsoft updates this training course when the community brings needed changes 
 1. From the **Marketplace** search results blade, select the **Function App** result.
 1. From the **Function App** blade, select **Create**.
 1. Find the tabs from the **Function App** blade, such as **Basics**.
+<<<<<<< HEAD
    
+=======
+>>>>>>> 73666a636c1394bc784f9f569c5d68084cdcdff8
     > **Note**: Each tab represents a step in the workflow to create a new function app. You can select **Review + Create** at any time to skip the remaining tabs.
 1. From the **Basics** tab, perform the following actions:
     1. Leave the **Subscription** text box set to its default value.
@@ -111,13 +165,19 @@ Microsoft updates this training course when the community brings needed changes 
     1. Select **Review + Create**.
 1. From the **Review + Create** tab, review the options that you selected during the previous steps.
 1. Select **Create** to create the function app by using your specified configuration.
+<<<<<<< HEAD
    
+=======
+>>>>>>> 73666a636c1394bc784f9f569c5d68084cdcdff8
     > **Note**: Wait for the creation task to complete before you move forward with this lab.
 
 > **Review**: In this exercise, you created all the resources that you'll use for this lab.
 
+<<<<<<< HEAD
 ![M7-Exer1-T4a](ZZ-lab/M7-Exer1-T4a.PNG)
 
+=======
+>>>>>>> 73666a636c1394bc784f9f569c5d68084cdcdff8
 ### Exercise 2: Configure secrets and identities
 
 #### Task 1: Configure a system-assigned managed service identity
@@ -131,10 +191,13 @@ Microsoft updates this training course when the community brings needed changes 
     1. In the confirmation dialog box, select **Yes**.
     > **Note**: Wait for the system-assigned managed identity to be created before you move forward with this lab.
 
+<<<<<<< HEAD
 ![M7-Exer2-T1a](ZZ-lab/M7-Exer2-T1a.PNG)
 
 ![M7-Exer2-T1b](ZZ-lab/M7-Exer2-T1b.PNG)
 
+=======
+>>>>>>> 73666a636c1394bc784f9f569c5d68084cdcdff8
 #### Task 2: Create a Key Vault secret
 
 1. In the Azure portal's navigation pane, select the **Resource groups** link.
@@ -159,8 +222,11 @@ Microsoft updates this training course when the community brings needed changes 
     1. Record the value of the **Secret Identifier** text box because you'll use this later in the lab.
     > **Note**: You are recording the value of the **Secret Identifier** text box, not the **Secret Value** text box.
 
+<<<<<<< HEAD
 ![M7-Exer2-T2a](ZZ-lab/M7-Exer2-T2a.PNG)
 
+=======
+>>>>>>> 73666a636c1394bc784f9f569c5d68084cdcdff8
 #### Task 3: Configure a Key Vault access policy
 
 1. In the Azure portal's navigation pane, select the **Resource groups** link.
@@ -171,7 +237,10 @@ Microsoft updates this training course when the community brings needed changes 
 1. From the **Add access policy** blade, perform the following actions:
     1. Select the **Select principal** link.
     1. From the **Principal** blade, find and then select the service principal named **securefunc[yourname]**, and then select **Select**.
+<<<<<<< HEAD
        
+=======
+>>>>>>> 73666a636c1394bc784f9f569c5d68084cdcdff8
         > **Note**: The system-assigned managed identity you created earlier in this lab will have the same name as the Azure Function resource.
     1. Leave the **Key permissions** list set to its default value.
     1. In the **Secret permissions** drop-down list, select the **GET** permission.
@@ -179,11 +248,16 @@ Microsoft updates this training course when the community brings needed changes 
     1. Leave the **Authorized application** text box set to its default value.
     1. Select **Add**.
 1. Back in the Access policies pane, select **Save**.
+<<<<<<< HEAD
    
     > **Note**: Wait for your changes to the access policies to save before you move forward with this lab.
 
 ![M7-Exer2-T3a](ZZ-lab/M7-Exer2-T3a.PNG)
 
+=======
+    > **Note**: Wait for your changes to the access policies to save before you move forward with this lab.
+
+>>>>>>> 73666a636c1394bc784f9f569c5d68084cdcdff8
 #### Task 4: Create a Key Vault-derived application setting
 
 1. In the Azure portal's navigation pane, select the **Resource groups** link.
@@ -194,7 +268,10 @@ Microsoft updates this training course when the community brings needed changes 
     1. Select the **Application settings** tab, and then select **New application setting**.
     1. In the **Add/Edit application setting** pop-up window, in the **Name** text box, enter **StorageConnectionString**.
     1. In the **Value** text box, construct a value by using the following syntax: ``@Microsoft.KeyVault(SecretUri=*Secret Identifier*)``
+<<<<<<< HEAD
        
+=======
+>>>>>>> 73666a636c1394bc784f9f569c5d68084cdcdff8
         > **Note**: You'll need to build a reference to your ***Secret Identifier*** by using the above syntax. For example, if your secret identifier is ``https://securevaultstudent.vault.azure.net/secrets/storagecredentials/17b41386df3e4191b92f089f5efb4cbf``, your value would be ``@Microsoft.KeyVault(SecretUri=https://securevaultstudent.vault.azure.net/secrets/storagecredentials/17b41386df3e4191b92f089f5efb4cbf)``.
     1. Leave the **deployment slot setting** text box set to its default value.
     1. Select **OK** to close the pop-up window and return to the **Configuration** section.
@@ -204,8 +281,11 @@ Microsoft updates this training course when the community brings needed changes 
 
 > **Review**: In this exercise, you created a system-assigned managed service identity for your function app and then gave that identity the appropriate permissions to get the value of a secret in your key vault. Finally, you created a secret that you referenced within your function app's configuration settings.
 
+<<<<<<< HEAD
 ![M7-Exer2-T4a](ZZ-lab/M7-Exer2-T4a.PNG)
 
+=======
+>>>>>>> 73666a636c1394bc784f9f569c5d68084cdcdff8
 ### Exercise 3: Build an Azure Functions app
 
 #### Task 1: Initialize a function project
@@ -230,8 +310,11 @@ Microsoft updates this training course when the community brings needed changes 
     dotnet build
     ```
 
+<<<<<<< HEAD
 ![M7-Exer3-T1a](ZZ-lab/M7-Exer3-T1a.PNG)
 
+=======
+>>>>>>> 73666a636c1394bc784f9f569c5d68084cdcdff8
 #### Task 2: Create an HTTP-triggered function
 
 1. Still in the open command prompt, enter the following command, and then select Enter to use the **Azure Functions Core Tools** to create a new function named **FileParser** using the **HTTP trigger** template:
@@ -243,8 +326,11 @@ Microsoft updates this training course when the community brings needed changes 
     > **Note**: You can review the documentation to [create a new function][azure-functions-core-tools-new-function] using the **Azure Functions Core Tools**.
 1. Close the currently running **Windows Terminal** application.
 
+<<<<<<< HEAD
 ![M7-Exer3-T2a](ZZ-lab/M7-Exer3-T2a.PNG)
 
+=======
+>>>>>>> 73666a636c1394bc784f9f569c5d68084cdcdff8
 #### Task 3: Configure and read an application setting
 
 1. On the **Start** screen, select the **Visual Studio Code** tile.
@@ -434,8 +520,11 @@ Microsoft updates this training course when the community brings needed changes 
 
 1. Select **Save** to save your changes to the **FileParser.cs** file.
 
+<<<<<<< HEAD
 ![M7-Exer3-T3a](ZZ-lab/M7-Exer3-T3a.PNG)
 
+=======
+>>>>>>> 73666a636c1394bc784f9f569c5d68084cdcdff8
 #### Task 4: Validate the local function
 
 1. On the taskbar, select the **Windows Terminal** icon.
@@ -499,8 +588,11 @@ Microsoft updates this training course when the community brings needed changes 
 
 1. Close all currently running instances of the **Windows Terminal** application.
 
+<<<<<<< HEAD
 ![M7-Exer3-T4a](ZZ-lab/M7-Exer3-T4a.PNG)
 
+=======
+>>>>>>> 73666a636c1394bc784f9f569c5d68084cdcdff8
 #### Task 5: Deploy using the Azure Functions Core Tools
 
 1. On the taskbar, select the **Windows Terminal** icon.
@@ -530,10 +622,13 @@ Microsoft updates this training course when the community brings needed changes 
 1. Wait for the deployment to finalize before you move forward with the lab.
 1. Close the currently running **Windows Terminal** application.
 
+<<<<<<< HEAD
 ![M7-Exer3-T5a](ZZ-lab/M7-Exer3-T5a.PNG)
 
 ![M7-Exer3-T5b](ZZ-lab/M7-Exer3-T5b.PNG)
 
+=======
+>>>>>>> 73666a636c1394bc784f9f569c5d68084cdcdff8
 #### Task 6: Test the Key Vault-derived application setting
 
 1. On the taskbar, select the **Microsoft Edge** icon.
@@ -552,10 +647,13 @@ Microsoft updates this training course when the community brings needed changes 
 
 > **Review**: In this exercise, you used a service identity to read the value of a secret stored in Key Vault and returned that value as the result of a function app.
 
+<<<<<<< HEAD
 ![M7-Exer3-T6a](ZZ-lab/M7-Exer3-T6a.PNG)
 
 ![M7-Exer3-T6b](ZZ-lab/M7-Exer3-T6b.PNG)
 
+=======
+>>>>>>> 73666a636c1394bc784f9f569c5d68084cdcdff8
 ### Exercise 4: Access Azure Blob Storage data
 
 #### Task 1: Upload a sample storage blob
@@ -588,6 +686,7 @@ Microsoft updates this training course when the community brings needed changes 
 1. On the taskbar, right-click the **Microsoft Edge** icon or activate the shortcut menu, and then select **New window**.
 1. In the new browser window, go to the URL that you copied for the blob.
 1. An error message indicating that the resource wasn't found should now display.
+<<<<<<< HEAD
    
     > **Note**: If the error message doesn't display, your browser might have cached the file. Press Ctrl+F5 to refresh the page until the error message displays.
 
@@ -597,6 +696,10 @@ Microsoft updates this training course when the community brings needed changes 
 
 ![M7-Exer4-T1c](ZZ-lab/M7-Exer4-T1c.PNG)
 
+=======
+    > **Note**: If the error message doesn't display, your browser might have cached the file. Press Ctrl+F5 to refresh the page until the error message displays.
+
+>>>>>>> 73666a636c1394bc784f9f569c5d68084cdcdff8
 #### Task 2: Pull and configure the Azure SDK for .NET
 
 1. On the taskbar, select the **Windows Terminal** icon.
@@ -633,7 +736,11 @@ Microsoft updates this training course when the community brings needed changes 
     using Microsoft.AspNetCore.Http;
     using System;
     using System.Threading.Tasks;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 73666a636c1394bc784f9f569c5d68084cdcdff8
     public static class FileParser
     {
         [FunctionName("FileParser")]
@@ -646,10 +753,13 @@ Microsoft updates this training course when the community brings needed changes 
     }
     ```
 
+<<<<<<< HEAD
 ![M7-Exer4-T2a](ZZ-lab/M7-Exer4-T2a.PNG)
 
 ![M7-Exer4-T2b](ZZ-lab/M7-Exer4-T2b.PNG)
 
+=======
+>>>>>>> 73666a636c1394bc784f9f569c5d68084cdcdff8
 #### Task 3: Write Azure Blob Storage code using the Azure SDK for .NET
 
 1. Within the **Run** method of the **FileParser** class, delete the following line of code:
@@ -702,8 +812,11 @@ Microsoft updates this training course when the community brings needed changes 
 
 1. Select **Save** to save your changes to the **FileParser.cs** file.
 
+<<<<<<< HEAD
 ![M7-Exer4-T3a](ZZ-lab/M7-Exer4-T3a.PNG)
 
+=======
+>>>>>>> 73666a636c1394bc784f9f569c5d68084cdcdff8
 #### Task 4: Deploy and validate the Azure Functions app
 
 1. On the taskbar, select the **Windows Terminal** icon.
@@ -748,10 +861,13 @@ Microsoft updates this training course when the community brings needed changes 
 
 > **Review**: In this exercise, you used C\# code to access a storage account, and then downloaded the contents of a blob.
 
+<<<<<<< HEAD
 ![M7-Exer4-T4a](ZZ-lab/M7-Exer4-T4a.PNG)
 
 ![M7-Exer4-T4b](ZZ-lab/M7-Exer4-T4b.PNG)
 
+=======
+>>>>>>> 73666a636c1394bc784f9f569c5d68084cdcdff8
 ### Exercise 5: Clean up your subscription
 
 #### Task 1: Open Azure Cloud Shell and list resource groups
@@ -776,8 +892,11 @@ Microsoft updates this training course when the community brings needed changes 
 
 1. Close the Cloud Shell pane in the portal.
 
+<<<<<<< HEAD
 ![M7-Exer5-T2a](ZZ-lab/M7-Exer5-T2a.PNG)
 
+=======
+>>>>>>> 73666a636c1394bc784f9f569c5d68084cdcdff8
 #### Task 3: Close the active application
 
 1. Close the currently running Microsoft Edge application.
