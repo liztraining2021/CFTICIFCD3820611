@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 public class Program
 {
-    private const string topicEndpoint = "https://hrtopicbmvb.francecentral-1.eventgrid.azure.net/api/events";
-    private const string topicKey = "3Sry4mSzFf9LnXe8k9FWps3wt0vZaWtqg+ZgeBRFyHY=";
+    private const string topicEndpoint = "https://hrtopiclgm.francecentral-1.eventgrid.azure.net/api/events";
+    private const string topicKey = "7WW7IkNaaxjNr6M6xUcaJxhTDg0+LiOvcCYB+THIDEE=";
         
 public static async Task Main(string[] args)
 {
