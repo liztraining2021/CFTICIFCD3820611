@@ -1,46 +1,11 @@
----
-lab:
-    az204Title: 'Lab 11: Monitoring services that are deployed to Azure'
-    az020Title: 'Lab 11: Monitoring services that are deployed to Azure'
-    az204Module: 'Module 11: Monitor and optimize Azure solutions'
-    az020Module: 'Module 11: Monitor and optimize Azure solutions'
-    type: 'Answer Key'
----
-
 # Lab 11: Monitoring services that are deployed to Azure
-# Student lab answer key
-
 ## Microsoft Azure user interface
 
 Given the dynamic nature of Microsoft cloud tools, you might experience Azure UI changes after the development of this training content. These changes might cause the lab instructions and steps to not match up.
 
 Microsoft updates this training course when the community brings needed changes to our attention. However, because cloud updates occur frequently, you might encounter UI changes before this training content updates. **If this occurs, adapt to the changes, and then work through them in the labs as needed.**
 
-## Instructions
-
-### Before you start
-
-#### Sign in to the lab virtual machine
-
-Sign in to your Windows 10 virtual machine (VM) by using the following credentials:
-    
--   Username: **Admin**
-
--   Password: **Pa55w.rd**
-
-> **Note**: Instructions to connect to the virtual lab environment will be provided by your instructor.
-
-#### Review the installed applications
-
-Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for the applications that you'll use in this lab:
-    
--   Microsoft Edge
-
--   File Explorer
-
--   Visual Studio Code
-
--   Windows PowerShell
+![Architecture-11-Monitor](ZZ-lab/Architecture-11-Monitor.png)
 
 ### Exercise 1: Create and configure Azure resources
 
@@ -101,6 +66,10 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 1.  From the **Application Insights** blade, in the **Configure** category, select the **Properties** link.
 
 1.  In the **Properties** section, find the value of the **Instrumentation Key** text box. This key is used by client applications to connect to Application Insights.
+
+![M11-Exer1-T2a](ZZ-lab/M11-Exer1-T2a.PNG)
+
+![M11-Exer1-T2b](ZZ-lab/M11-Exer1-T2b.PNG)
 
 #### Task 3: Create a web app by using Azure App Services resource
 
@@ -174,6 +143,12 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  In the **Properties** section, record the value of the **URL** text box. You'll use this value later in the lab to make requests against the API.
 
+![M11-Exer1-T3a](ZZ-lab/M11-Exer1-T3a.PNG)
+
+![M11-Exer1-T3b](ZZ-lab/M11-Exer1-T3b.PNG)
+
+![M11-Exer1-T3c](ZZ-lab/M11-Exer1-T3c.PNG)
+
 #### Task 4: Configure web app autoscale options
 
 1.  From the **App Service** blade, in the **Settings** category, select the **Scale out (App Service Plan)** link.
@@ -203,6 +178,8 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 #### Review
 
 In this exercise, you created the resources that you'll use for the remainder of the lab.
+
+![M11-Exer1-T4a](ZZ-lab/M11-Exer1-T4a.PNG)
 
 ### Exercise 2: Monitor a local web application by using Application Insights 
 
@@ -252,7 +229,11 @@ In this exercise, you created the resources that you'll use for the remainder of
     ```
     dotnet build
     ```
-    
+
+![M11-Exer2-T1a](ZZ-lab/M11-Exer2-T1a.PNG)
+
+![M11-Exer2-T1b](ZZ-lab/M11-Exer2-T1b.PNG)
+
 #### Task 2: Update application code to disable HTTPS and use Application Insights
 
 1.  In the **Visual Studio Code** window, in the Explorer pane, select the **Startup.cs** file to open the file in the editor.
@@ -306,6 +287,8 @@ In this exercise, you created the resources that you'll use for the remainder of
     dotnet build
     ```
 
+![M11-Exer2-T2a](ZZ-lab/M11-Exer2-T2a.PNG)
+
 #### Task 3: Test an API application locally
 
 1.  At the command prompt, enter the following command, and then select Enter to run the .NET web application.
@@ -324,6 +307,8 @@ In this exercise, you created the resources that you'll use for the remainder of
 
 1.  Close the currently running Visual Studio Code application.
 
+![M11-Exer2-T3a](ZZ-lab/M11-Exer2-T3a.PNG)
+
 #### Task 4: Get metrics in Application Insights
 
 1.  Return to your currently open browser window that's displaying the Azure portal.
@@ -341,6 +326,8 @@ In this exercise, you created the resources that you'll use for the remainder of
 #### Review
 
 In this exercise, you created an API by using ASP.NET and configured it to stream application metrics to Application Insights. You then used the Application Insights dashboard to get performance details about your API.
+
+![M11-Exer2-T4a](ZZ-lab/M11-Exer2-T4a.PNG)
 
 ### Exercise 3: Monitor a web app using Application Insights
 
@@ -422,6 +409,12 @@ In this exercise, you created an API by using ASP.NET and configured it to strea
 
 1.  Find the JavaScript Object Notation (JSON) array that's returned as a result of using the API.
 
+![M11-Exer3-T1a](ZZ-lab/M11-Exer3-T1a.PNG)
+
+![M11-Exer3-T1b](ZZ-lab/M11-Exer3-T1b.PNG)
+
+![M11-Exer3-T1c](ZZ-lab/M11-Exer3-T1c.PNG)
+
 #### Task 2: Configure in-depth metric collection for Web Apps
 
 1.  Return to your currently open browser window that's displaying the Azure portal.
@@ -466,6 +459,10 @@ In this exercise, you created an API by using ASP.NET and configured it to strea
 
     > **Note**: Using the example from the previous step, you would record the URL ``https://smpapistudent.azurewebsites.net/weatherforecast``.
 
+![M11-Exer3-T2a](ZZ-lab/M11-Exer3-T2a.PNG)
+
+![M11-Exer3-T2b](ZZ-lab/M11-Exer3-T2b.PNG)
+
 #### Task 3: Get updated metrics in Application Insights
 
 1.  Return to your currently open browser window that's displaying the Azure portal.
@@ -479,6 +476,8 @@ In this exercise, you created an API by using ASP.NET and configured it to strea
 1.  From the **Application Insights** blade, in the tiles in the center of the blade, find the displayed metrics. Specifically, find the number of server requests that have occurred and the average server response time.
 
     > **Note**: It can take up to five minutes to observe requests in the Application Insights metrics charts.
+
+![M11-Exer3-T3a](ZZ-lab/M11-Exer3-T3a.PNG)
 
 #### Task 4: View real-time metrics in Application Insights
 
@@ -508,6 +507,8 @@ In this exercise, you created an API by using ASP.NET and configured it to strea
 
 In this exercise, you deployed your web application to Azure App Service and monitored your metrics from the same Application Insights instance.
 
+![M11-Exer3-T4a](ZZ-lab/M11-Exer3-T4a.PNG)
+
 ### Exercise 4: Clean up your subscription 
 
 #### Task 1: Open Azure Cloud Shell
@@ -531,6 +532,10 @@ In this exercise, you deployed your web application to Azure App Service and mon
     ```
     
 1.  Close the Cloud Shell pane in the portal.
+
+![M11-Exer4-T2a](ZZ-lab/M11-Exer4-T2a.PNG)
+
+![M11-Exer4-T2b](ZZ-lab/M11-Exer4-T2b.PNG)
 
 #### Task 3: Close the active applications
 

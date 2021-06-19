@@ -1,38 +1,11 @@
----
-lab:
-    az204Title: 'Lab 12: Enhancing a web application by using the Azure Content Delivery Network'
-    az204Module: 'Module 12: Integrate caching and content delivery within solutions'
-    type: 'Answer Key'
----
-
 # Lab 12: Enhancing a web application by using the Azure Content Delivery Network
-# Student lab answer key
-
 ## Microsoft Azure user interface
 
 Given the dynamic nature of Microsoft cloud tools, you might experience Azure UI changes after the development of this training content. These changes might cause the lab instructions and lab steps to not match up.
 
 Microsoft updates this training course when the community brings needed changes to our attention; however, because cloud updates occur frequently, you might encounter UI changes before this training content updates. **If this occurs, adapt to the changes, and then work through them in the labs as needed.**
 
-## Instructions
-
-### Before you start
-
-#### Sign in to the lab virtual machine
-
-Sign in to your Windows 10 virtual machine (VM) by using the following credentials:
-    
--   Username: **Admin**
-
--   Password: **Pa55w.rd**
-
-> **Note**: Instructions to connect to the virtual lab environment will be provided by your instructor.
-
-#### Review the installed applications
-
-Find the taskbar on your Windows 10 desktop. The taskbar contains the icon for the application that you'll use in this lab:
-    
--   Microsoft Edge
+![Architecture-12-CDN](ZZ-lab/Architecture-12-CDN.png)
 
 ### Exercise 1: Create Azure resources
 
@@ -86,7 +59,9 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icon for t
 1.  Select **Create** to create the storage account by using your specified configuration. 
 
     > **Note**: Wait for the creation task to complete before you move forward with this lab.
-    
+
+![M12-Exer1-T2a](ZZ-lab/M12-Exer1-T2a.PNG)
+
 #### Task 3: Create a web app by using Azure App Service
 
 1.  In the Azure portal's navigation pane, select **Create a resource**.
@@ -155,6 +130,10 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icon for t
 
 In this exercise, you created an Azure Storage account and an Azure Web App that you'll use later in this lab.
 
+![M12-Exer1-T3a](ZZ-lab/M12-Exer1-T3a.PNG)
+
+![M12-Exer1-T3b](ZZ-lab/M12-Exer1-T3b.PNG)
+
 ### Exercise 2: Configure Content Delivery Network and endpoints
 
 #### Task 1: Open Azure Cloud Shell
@@ -174,6 +153,8 @@ In this exercise, you created an Azure Storage account and an Azure Web App that
     ```
     az --version
     ```
+
+![M12-Exer2-T1a](ZZ-lab/M12-Exer2-T1a.PNG)
 
 #### Task 2: Register the Microsoft.CDN provider
 
@@ -219,6 +200,10 @@ In this exercise, you created an Azure Storage account and an Azure Web App that
 
 1.  Close the Cloud Shell pane in the portal.
 
+![M12-Exer2-T2a](ZZ-lab/M12-Exer2-T2a.PNG)
+
+#### ![M12-Exer2-T2b](ZZ-lab/M12-Exer2-T2b.PNG)
+
 #### Task 3: Create a Content Delivery Network profile
 
 1.  In the Azure portal's navigation pane, select **Create a resource**.
@@ -248,6 +233,8 @@ In this exercise, you created an Azure Storage account and an Azure Web App that
     1.  Select **Create**.
   
     > **Note**: Wait for Azure to finish creating the CDN profile before you move forward with the lab. You'll receive a notification when the app is created.
+
+![M12-Exer2-T3a](ZZ-lab/M12-Exer2-T3a.PNG)
 
 #### Task 4: Configure Storage containers
 
@@ -280,6 +267,8 @@ In this exercise, you created an Azure Storage account and an Azure Web App that
     1.  Select **Create**.
 
 1.  Observe the updated list of containers.
+
+![M12-Exer2-T4a](ZZ-lab/M12-Exer2-T4a.PNG)
 
 #### Task 5: Create Content Delivery Network endpoints
 
@@ -353,6 +342,10 @@ In this exercise, you created an Azure Storage account and an Azure Web App that
 
 In this exercise, you registered the resource provider for Content Delivery Network and then used the provider to create both CDN profile and endpoint resources.
 
+![M12-Exer2-T5a](ZZ-lab/M12-Exer2-T5a.PNG)
+
+![M12-Exer2-T5b](ZZ-lab/M12-Exer2-T5b.PNG)
+
 ### Exercise 3: Upload and configure static web content
 
 #### Task 1: Observe the landing page
@@ -368,6 +361,8 @@ In this exercise, you registered the resource provider for Content Delivery Netw
 1.  Observe the error message displayed on the screen. The website won't work until you configure the specified settings to reference multimedia content.
 
 1.  Return to your currently open browser window that's displaying the Azure portal.
+
+![M12-Exer3-T1a](ZZ-lab/M12-Exer3-T1a.PNG)
 
 #### Task 2: Upload Storage blobs
 
@@ -423,6 +418,14 @@ In this exercise, you registered the resource provider for Content Delivery Netw
 
 1.  Record the value in the **URL** text box. You will use this value later in the lab.
 
+![M12-Exer3-T2a](ZZ-lab/M12-Exer3-T2a.PNG)
+
+![M12-Exer3-T2b](ZZ-lab/M12-Exer3-T2b.PNG)
+
+![M12-Exer3-T2c](ZZ-lab/M12-Exer3-T2c.PNG)
+
+![M12-Exer3-T2d](ZZ-lab/M12-Exer3-T2d.PNG)
+
 #### Task 3: Configure Web App settings
 
 1.  In the Azure portal's navigation pane, select **Resource groups**.
@@ -455,6 +458,8 @@ In this exercise, you registered the resource provider for Content Delivery Netw
 
     > **Note**: Wait for your application settings to persist before you move forward with the lab.
 
+![M12-Exer3-T3a](ZZ-lab/M12-Exer3-T3a.PNG)
+
 #### Task 4: Validate the corrected landing page
 
 1.  In the Azure portal's navigation pane, select **Resource groups**.
@@ -477,6 +482,8 @@ In this exercise, you registered the resource provider for Content Delivery Netw
 
 In this exercise, you uploaded multimedia content as blobs to Storage containers and then updated your Web App to point directly to the storage blobs.
 
+![M12-Exer3-T4a](ZZ-lab/M12-Exer3-T4a.PNG)
+
 ### Exercise 4: Use Content Delivery Network endpoints
 
 #### Task 1: Retrieve endpoint URIs
@@ -498,6 +505,10 @@ In this exercise, you uploaded multimedia content as blobs to Storage containers
 1.  On the **Endpoint** blade, copy the value of the **Endpoint hostname** text box. You will use this value later in the lab.
 
 1.  Close the **Endpoint** blade.
+
+![M12-Exer4-T1a](ZZ-lab/M12-Exer4-T1a.PNG)
+
+![M12-Exer4-T1b](ZZ-lab/M12-Exer4-T1b.PNG)
 
 #### Task 2: Test multimedia content
 
@@ -531,6 +542,14 @@ In this exercise, you uploaded multimedia content as blobs to Storage containers
 
 1.  Close the browser window that you created in this task.
 
+![M12-Exer4-T2a](ZZ-lab/M12-Exer4-T2a.PNG)
+
+![M12-Exer4-T2b](ZZ-lab/M12-Exer4-T2b.PNG)
+
+![M12-Exer4-T2c](ZZ-lab/M12-Exer4-T2c.PNG)
+
+![M12-Exer4-T2d](ZZ-lab/M12-Exer4-T2d.PNG)
+
 #### Task 3: Update the Web App settings
 
 1.  In the Azure portal's navigation pane, select **Resource groups**.
@@ -563,6 +582,10 @@ In this exercise, you uploaded multimedia content as blobs to Storage containers
 
     > **Note**: Wait for the restart operation to complete before you move forward with the lab. You'll receive a notification when the operation is done.
 
+![M12-Exer4-T3a](ZZ-lab/M12-Exer4-T3a.PNG)
+
+![M12-Exer4-T3b](ZZ-lab/M12-Exer4-T3b.PNG)
+
 #### Task 4: Test the web content
 
 1.  In the Azure portal's navigation pane, select the **Resource groups** link.
@@ -584,6 +607,10 @@ In this exercise, you uploaded multimedia content as blobs to Storage containers
 #### Review
 
 In this exercise, you updated your Web App to use Content Delivery Network to serve multimedia content and to serve the web application itself.
+
+![M12-Exer4-T4a](ZZ-lab/M12-Exer4-T4a.PNG)
+
+![M12-Exer4-T4b](ZZ-lab/M12-Exer4-T4b.PNG)
 
 ### Exercise 5: Clean up your subscription 
 
@@ -608,6 +635,8 @@ In this exercise, you updated your Web App to use Content Delivery Network to se
     ```
     
 1.  Close the Cloud Shell pane in the portal.
+
+![M12-Exer5-T2a](ZZ-lab/M12-Exer5-T2a.PNG)
 
 #### Task 3: Close the active application
 

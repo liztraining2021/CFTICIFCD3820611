@@ -39,6 +39,8 @@ Microsoft updates this training course when the community brings needed changes 
     az --version
     ```
 
+![M9-Exer1-T2a](ZZ-lab/M9-Exer1-T2a.PNG)
+
 #### Task 3: View the Microsoft.EventGrid provider registration
 
 1. At the **Cloud Shell** command prompt in the portal, perform the following actions:
@@ -71,6 +73,10 @@ Microsoft updates this training course when the community brings needed changes 
 
 1. Close the Cloud Shell pane.
 
+![M9-Exer1-T3a](ZZ-lab/M9-Exer1-T3a.PNG)
+
+![M9-Exer1-T3b](ZZ-lab/M9-Exer1-T3b.PNG)
+
 #### Task 4: Create a custom Event Grid topic
 
 1. In the Azure portal's navigation pane, select **Create a resource**.
@@ -94,6 +100,8 @@ Microsoft updates this training course when the community brings needed changes 
     1. From the **Event Schema** drop-down list, select **Event Grid Schema**, and then select **Create**.
   
     > **Note**: Wait for Azure to finish creating the topic before you continue with the lab. You'll receive a notification when the topic is created.
+
+![M9-Exer1-T4a](ZZ-lab/M9-Exer1-T4a.PNG)
 
 #### Task 5: Deploy the Azure Event Grid viewer to a web app
 
@@ -155,6 +163,8 @@ Microsoft updates this training course when the community brings needed changes 
 
 In this exercise, you created the Event Grid topic and a web app that you will use throughout the remainder of the lab.
 
+![M9-Exer1-T5a](ZZ-lab/M9-Exer1-T5a.PNG)
+
 ### Exercise 2: Create an Event Grid subscription
 
 #### Task 1: Access the Event Grid Viewer web application
@@ -178,6 +188,10 @@ In this exercise, you created the Event Grid topic and a web app that you will u
     > **Note**: This web application will update in real-time as events are sent to its endpoint. We will use this to monitor events throughout the lab.
 
 1. Return to your currently open browser window that's displaying the Azure portal.
+
+![M9-Exer2-T1a](ZZ-lab/M9-Exer2-T1a.PNG)
+
+![M9-Exer2-T1b](ZZ-lab/M9-Exer2-T1b.PNG)
 
 #### Task 2: Create new subscription
 
@@ -205,7 +219,11 @@ In this exercise, you created the Event Grid topic and a web app that you will u
 
     1. Select **Create**.
   
-    > **Note**: Wait for Azure to finish creating the subscription before you continue with the lab. You'll receive a notification when the subscription is created.
+    > **Note**: Wait for Azure to finish creating the subscription before you continue with ![M9-Exer2-T2a](ZZ-lab/M9-Exer2-T2a.PNG)
+    >
+    > the lab. You'll receive a notification when the subscription is created.
+
+![M9-Exer2-T2b](ZZ-lab/M9-Exer2-T2b.PNG)
 
 #### Task 3: Observe the subscription validation event
 
@@ -216,6 +234,10 @@ In this exercise, you created the Event Grid topic and a web app that you will u
 1. Select the event and review its JSON content.
 
 1. Return to your currently open browser window with the Azure portal.
+
+![M9-Exer2-T3a](ZZ-lab/M9-Exer2-T3a.PNG)
+
+![M9-Exer2-T3b](ZZ-lab/M9-Exer2-T3b.PNG)
 
 #### Task 4: Record subscription credentials
 
@@ -234,6 +256,10 @@ In this exercise, you created the Event Grid topic and a web app that you will u
 #### Review
 
 In this exercise, you created a new subscription, validated its registration, and then recorded the credentials required to publish a new event to the topic.
+
+![M9-Exer2-T4a](ZZ-lab/M9-Exer2-T4a.PNG)
+
+![M9-Exer2-T4b](ZZ-lab/M9-Exer2-T4b.PNG)
 
 ### Exercise 3: Publish Event Grid events from .NET
 
@@ -270,6 +296,10 @@ In this exercise, you created a new subscription, validated its registration, an
     ```
 
 1. Select **Kill Terminal** or the **Recycle Bin** icon to close the currently open terminal and any associated processes.
+
+![M9-Exer3-T1a](ZZ-lab/M9-Exer3-T1a.PNG)
+
+![M9-Exer3-T1b](ZZ-lab/M9-Exer3-T1b.PNG)
 
 #### Task 2: Modify the Program class to connect to Event Grid
 
@@ -341,6 +371,8 @@ In this exercise, you created a new subscription, validated its registration, an
         }
     }
     ```
+
+![M9-Exer3-T2a](ZZ-lab/M9-Exer3-T2a.PNG)
 
 #### Task 3: Publish new events
 
@@ -473,6 +505,8 @@ In this exercise, you created a new subscription, validated its registration, an
 
 1. Select **Kill Terminal** or the **Recycle Bin** icon to close the currently open terminal and any associated processes.
 
+![M9-Exer3-T3a](ZZ-lab/M9-Exer3-T3a.PNG)
+
 #### Task 4: Observe published events
 
 1. Return to the browser window with the **Azure Event Grid viewer** web application.
@@ -486,6 +520,8 @@ In this exercise, you created a new subscription, validated its registration, an
 #### Review
 
 In this exercise, you published new events to your Event Grid topic using a .NET console application.
+
+![M9-Exer3-T4a](ZZ-lab/M9-Exer3-T4a.PNG)
 
 ### Exercise 4: Clean up your subscription
 
@@ -510,6 +546,8 @@ In this exercise, you published new events to your Event Grid topic using a .NET
     ```
 
 1. Close the Cloud Shell pane in the portal.
+
+![M9-Exer4-T2a](ZZ-lab/M9-Exer4-T2a.PNG)
 
 #### Task 3: Close the active applications
 
