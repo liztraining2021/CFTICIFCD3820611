@@ -81,3 +81,8 @@ DefaultEndpointsProtocol=https;AccountName=funcstorlgm;AccountKey=Mq473aEXFvjm5h
 ![M2-Exer7-1a](ZZ-lab/M2-Exer7-1a.PNG)
 
 ![M2-Exer7-2a](ZZ-lab/M2-Exer7-2a.PNG)
+
+
+
+# [Volver >>>](https://github.com/liztraining2021/CFTICIFCD3820611/blob/master/ContenidoEvidenciasAZ-204.md)
+

@@ -615,3 +615,6 @@ In this exercise, you created new messages in the queue by using the .NET librar
 #### Review
 
 In this exercise, you cleaned up your subscription by removing the resource group that was used in this lab.
+
+# [Volver >>>](https://github.com/liztraining2021/CFTICIFCD3820611/blob/master/ContenidoEvidenciasAZ-204.md)
+

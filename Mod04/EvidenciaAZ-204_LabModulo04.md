@@ -1175,3 +1175,8 @@ In this exercise, you wrote C# code to query an Azure Cosmos DB collection by us
 In this exercise, you cleaned up your subscription by removing the resource groups used in this lab.
 
 ![M4-Exer6-T3a](ZZ-lab/M4-Exer6-T3a.PNG)
+
+
+
+# [Volver >>>](https://github.com/liztraining2021/CFTICIFCD3820611/blob/master/ContenidoEvidenciasAZ-204.md)
+

@@ -580,3 +580,8 @@ In this exercise, you used multiple methods to deploy a container image to an Az
 #### Review
 
 In this exercise, you cleaned up your subscription by removing the resource groups used in this lab.
+
+
+
+# [Volver >>>](https://github.com/liztraining2021/CFTICIFCD3820611/blob/master/ContenidoEvidenciasAZ-204.md)
+

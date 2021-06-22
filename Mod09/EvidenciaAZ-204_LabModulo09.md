@@ -558,3 +558,8 @@ In this exercise, you published new events to your Event Grid topic using a .NET
 #### Review
 
 In this exercise, you cleaned up your subscription by removing the resource groups used in this lab.
+
+
+
+# [Volver >>>](https://github.com/liztraining2021/CFTICIFCD3820611/blob/master/ContenidoEvidenciasAZ-204.md)
+

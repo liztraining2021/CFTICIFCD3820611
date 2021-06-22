@@ -671,3 +671,6 @@ In this exercise, you queried Microsoft Graph by using the SDK and MSAL-based au
 #### Review
 
 In this exercise, you cleaned up your subscription by removing the application registration used in this lab.
+
+# [Volver >>>](https://github.com/liztraining2021/CFTICIFCD3820611/blob/master/ContenidoEvidenciasAZ-204.md)
+
